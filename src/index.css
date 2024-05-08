@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Audi Type Normal';
+  src: url('./assets/fonts/AudiType-Normal_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-Normal_4.03.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Audi Type Bold';
+  src: url('./assets/fonts/AudiType-Bold_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-Bold_4.03.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Audi Type Extended Normal';
+  src: url('./assets/fonts/AudiType-ExtendedNormal_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-ExtendedNormal_4.03.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Audi Type Extended Bold';
+  src: url('./assets/fonts/AudiType-ExtendedBold_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-ExtendedBold_4.03.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Audi Type Wide Light';
+  src: url('./assets/fonts/AudiType-WideLight_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-WideLight_4.03.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Audi Type Wide Normal';
+  src: url('./assets/fonts/AudiType-WideNormal_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-WideNormal_4.03.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Audi Type Wide Bold';
+  src: url('./assets/fonts/AudiType-WideBold_4.03.woff2') format('woff2'),
+  url('./assets/fonts/AudiType-WideBold_4.03.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Audi Type Wide Light';
+}
+
+#car-results {
+  animation: slide-in-from-bottom 0.7s ease-out;
+}
+
+@keyframes slide-in-from-bottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
