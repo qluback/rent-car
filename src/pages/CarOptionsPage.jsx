@@ -5,7 +5,6 @@ import doorIcon from "../assets/svg/door-open-l-white.svg";
 import userIcon from "../assets/svg/user-l-white.svg";
 import trunkIcon from "../assets/svg/trunk-open-l-white.svg";
 import Counter from "../components/Counter";
-import Summary from "../components/Sidebar/Sidebar";
 import PartnerInfos from "../components/Sidebar/PartnerInfos";
 import { OPTIONS } from "../dummy-options";
 import Sidebar from "../components/Sidebar/Sidebar";

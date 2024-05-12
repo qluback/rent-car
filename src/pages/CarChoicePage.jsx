@@ -1,5 +1,4 @@
 import CarResults from "../components/CarResults";
-import RentForm from "../components/Form/RentForm";
 import PartnerInfos from "../components/Sidebar/PartnerInfos";
 import Sidebar from "../components/Sidebar/Sidebar";
 

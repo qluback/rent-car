@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import { CartContext, CartDispatchContext } from "../store/CartContext";
-import CartModal from "./CartModal";
 import ButtonNav from "./ButtonNav";
-import { useState } from "react";
 
 export default function Header() {
   const cartContext = useContext(CartContext);
