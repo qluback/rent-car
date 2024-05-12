@@ -20,7 +20,7 @@ export default function Collapse() {
       <button onClick={() => handleToggle()}>Horaires d'ouvertures %</button>
       <ul
         ref={list}
-        className="max-h-0 overflow-hidden transition-all duration-500 flex flex-col gap-4 text-sm"
+        className="max-h-0 overflow-hidden transition-all duration-500 grid grid-cols-2 gap-4 text-sm"
       >
         {cartContext.partner.openingHours.map((openingHour) => {
           const hours = [
@@ -37,10 +37,10 @@ export default function Collapse() {
               {!isClosed && (
                 <>
                   <p>
-                    de {openingHour.startMorning} à {openingHour.endMorning}
+                    {openingHour.startMorning} - {openingHour.endMorning}
                   </p>
                   <p>
-                    de {openingHour.startAfternoon} à {openingHour.endAfternoon}
+                    {openingHour.startAfternoon} - {openingHour.endAfternoon}
                   </p>
                 </>
               )}

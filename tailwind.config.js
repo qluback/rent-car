@@ -15,6 +15,9 @@ export default {
         wideNormal: ["Audi Type Wide Normal", "sans-serif"],
         wideBold: ["Audi Type Wide Bold", "sans-serif"]
       },
+      borderWidth: {
+        "1": "1px",
+      }
     },
   },
   plugins: [],

@@ -1,11 +1,25 @@
 import { CATALOG } from "../dummy-cars";
+import { PARTNERS } from "../dummy-partners";
 
 export default function cartReducer(cart, action) {
-  const { carSelected, options, totalPrice, partner, userInfos, currentPage } =
+  const { carSelected, nbKilometers, options, totalPrice, partner, userInfos, currentPage } =
     cart;
   switch (action.type) {
     case "SELECT_TAB": {
       return { ...cart, currentPage: action.page };
+    }
+    case "SELECT_PARTNER": {
+      console.log(action);
+      const partnerFound = PARTNERS.find((partner) => {
+        return partner.name === action.partnerName;
+      });
+
+      return {
+        ...cart,
+        currentPage: "Choix du véhicule",
+        partner: partnerFound,
+        dates: { start: action.startRent, end: action.endRent },
+      };
     }
     case "SELECT_CAR": {
       const rangeFound = CATALOG.find((range) => {
@@ -29,39 +43,37 @@ export default function cartReducer(cart, action) {
       };
     }
     case "INCREMENT_KILOMETERS": {
-      const updatedOptions = { ...options };
-      updatedOptions.nbKilometers += 100;
-      console.log(updatedOptions);
+      return {
+        ...cart,
+        totalPrice: totalPrice + 15,
+        nbKilometers: nbKilometers + 100,
+      };
+    }
+    case "DECREMENT_KILOMETERS": {
+      if (nbKilometers === 100) {
+        return cart;
+      }
 
       return {
         ...cart,
         totalPrice: totalPrice + 15,
-        options: updatedOptions,
-      };
-    }
-    case "DECREMENT_KILOMETERS": {
-      if (options.nbKilometers === 100) {
-        return cart;
-      }
-      const updatedOptions = { ...options };
-      updatedOptions.nbKilometers -= 100;
-      console.log(updatedOptions);
-
-      return {
-        ...cart,
-        totalPrice: totalPrice - 15,
-        options: updatedOptions,
+        nbKilometers: nbKilometers + 100,
       };
     }
     case "TOGGLE_OPTION": {
       let updatedTotalPrice = totalPrice;
-      const updatedOptions = { ...options };
-      const existingOption = options[action.option.id];
-      if (existingOption === undefined) {
-        updatedOptions[action.option.id] = action.option;
+      let updatedOptions = [...options];
+      const existingOption = updatedOptions.findIndex(option => {
+        return option.id === action.option.id;
+      });
+
+      if (existingOption === -1) {
+        updatedOptions.push(action.option);
         updatedTotalPrice += action.option.price;
       } else {
-        delete updatedOptions[action.option.id];
+        updatedOptions = updatedOptions.filter(option => {
+          return option.id !== action.option.id;
+        });
         updatedTotalPrice -= action.option.price;
       }
 

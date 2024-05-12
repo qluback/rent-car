@@ -4,6 +4,7 @@ import CarChoicePage from "./CarChoicePage";
 import PaymentPage from "./PaymentPage";
 import UserInformationsPage from "./UserInformationsPage";
 import CarOptionsPage from "./CarOptionsPage";
+import PartnerChoicePage from "./PartnerChoicePage";
 
 export default function Main() {
   const cartContext = useContext(CartContext);
@@ -11,6 +12,8 @@ export default function Main() {
 
   function getPage(pageName) {
     switch (pageName) {
+      case "Choix du partenaire":
+        return <PartnerChoicePage />;
       case "Choix du véhicule":
         return <CarChoicePage />;
       case "Choix des options":
@@ -22,5 +25,5 @@ export default function Main() {
     }
   }
 
-  return <main className="mt-8">{currentPage}</main>;
+  return <main className="flex h-screen overflow-hidden">{currentPage}</main>;
 }

@@ -10,12 +10,11 @@ export default function CarInfos() {
   )}/200/125`;
 
   return (
-    <div className="bg-gray-100 p-4">
+    <div className="border-1 border-white text-white p-4 w-full">
       <h3 className="text-xl uppercase mb-4">Mon véhicule</h3>
-      <img src={imageUrl} alt="" className="w-full mb-2" />
+      {/* <img src={imageUrl} alt="" className="w-full mb-2" /> */}
       <h4 className="font-typeBold">{car.name}</h4>
       <p className="font-wideNormal">{car.description}</p>
-      <p>{cartContext.options.nbKilometers}km inclus</p>
     </div>
   );
 }

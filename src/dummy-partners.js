@@ -1,6 +1,247 @@
 export const PARTNERS = [
   {
-    name: "Audi rent PARIS WAGRAM",
+    name: "Audi PARIS WAGRAM",
+    address: "21 Rue Cardinet, 75017 Paris",
+    location: {
+      lat: 48.881750,
+      lng: 2.302540
+    },
+    openingHours: [
+      {
+        day: "Monday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Tuesday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Wednesday",
+        startMorning: "00:00",
+        endMorning: "00:00",
+        startAfternoon: "00:00",
+        endAfternoon: "00:00",
+      },
+      {
+        day: "Thursday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Friday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Saturday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Sunday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+    ],
+  },
+  {
+    name: "Audi Toulouse Nord - Sterling Automobiles",
+    address: "Avenue des États-Unis 157, 31200 Toulouse",
+    location: {
+      lat: 43.636100,
+      lng: 1.430110
+    },
+    openingHours: [
+      {
+        day: "Monday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Tuesday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Wednesday",
+        startMorning: "00:00",
+        endMorning: "00:00",
+        startAfternoon: "00:00",
+        endAfternoon: "00:00",
+      },
+      {
+        day: "Thursday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Friday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Saturday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Sunday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+    ],
+  },
+  {
+    name: "Audi Odicée Marseille",
+    address: "1 Bd de la Cartonnerie, 13011 Marseille",
+    location: {
+      lat: 43.292800,
+      lng: 5.458600
+    },
+    openingHours: [
+      {
+        day: "Monday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Tuesday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Wednesday",
+        startMorning: "00:00",
+        endMorning: "00:00",
+        startAfternoon: "00:00",
+        endAfternoon: "00:00",
+      },
+      {
+        day: "Thursday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Friday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Saturday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Sunday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+    ],
+  },
+  {
+    name: "AUDI NANTES Océan Automobile",
+    address: "2 Rue Emile Levassor, 44700 Orvault",
+    location: {
+      lat: 47.256270,
+      lng: -1.629380
+    },
+    openingHours: [
+      {
+        day: "Monday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Tuesday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Wednesday",
+        startMorning: "00:00",
+        endMorning: "00:00",
+        startAfternoon: "00:00",
+        endAfternoon: "00:00",
+      },
+      {
+        day: "Thursday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Friday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Saturday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+      {
+        day: "Sunday",
+        startMorning: "09:00",
+        endMorning: "12:30",
+        startAfternoon: "14:00",
+        endAfternoon: "18:00",
+      },
+    ],
+  },
+  {
+    name: "Audi Strasbourg - Grand Est Automobiles",
+    address: "4 Rue Emile Mathis, 67800 Hœnheim",
+    location: {
+      lat: 48.621170,
+      lng: 7.727860
+    },
     openingHours: [
       {
         day: "Monday",

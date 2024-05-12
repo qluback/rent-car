@@ -15,7 +15,7 @@ export default function Counter() {
         +
       </button>
       <p>
-        <span className="font-wideNormal text-xl">{cartContext.options.nbKilometers}</span> km
+        <span className="font-wideNormal text-xl">{cartContext.nbKilometers}</span> km
       </p>
     </div>
   );

@@ -69,7 +69,7 @@ body {
   font-family: 'Audi Type Wide Light';
 }
 
-#car-results {
+.slide-in-from-bottom {
   animation: slide-in-from-bottom 0.7s ease-out;
 }
 

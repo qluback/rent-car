@@ -26,7 +26,7 @@ export default function CarResults() {
         activeCategory={activeCategory}
         onSelect={handleSelectCategory}
       />
-      <ul id="car-results" className="grid grid-cols-4 gap-8">
+      <ul className="slide-in-from-bottom grid grid-cols-4 gap-8">
         {CATALOG.map((range) => {
           return range.models.map((model) => {
             if (model.category === activeCategory) {

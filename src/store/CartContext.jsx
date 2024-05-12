@@ -9,11 +9,13 @@ export const CartDispatchContext = createContext(null);
 export default function CartContextProvider({ children }) {
   const [cart, dispatch] = useReducer(cartReducer, {
     carSelected: {},
-    options: { nbKilometers: 100 },
+    nbKilometers: 100,
+    options: [],
     totalPrice: 15,
     partner: PARTNERS[0],
+    dates: {start: null, end: null},
     userInfos: {},
-    currentPage: "Choix du véhicule",
+    currentPage: "Choix du partenaire",
   });
 
   return (
